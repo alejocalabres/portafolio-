@@ -1,0 +1,286 @@
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f5f5f5;
+    background-color: #121212;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 15px 20px;
+    color: #e50914;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e50914;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff3b30;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #e50914;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.about-text h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 800px;
+    /* Limitar el ancho del párrafo */
+    text-align: center;
+    /* Centrar el texto */
+}
+
+/* Redes Sociales */
+.social-media-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media-links a {
+    color: #e50914;
+    font-size: 2em;
+    transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #ff3b30;
+}
+
+/* Proyectos */
+#projects {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#projects h2 {
+    color: #e50914;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.project {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.project-info h3 {
+    font-size: 1.8em;
+    color: #e50914;
+    margin: 10px 0;
+}
+
+.project-info p {
+    margin-bottom: 10px;
+}
+
+.project-info a {
+    color: #e50914;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-info a:hover {
+    text-decoration: underline;
+}
+
+/* Habilidades */
+#skills {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#skills h2 {
+    color: #e50914;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 15px;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #e50914;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+/* Testimonios */
+#testimonials {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#testimonials h2 {
+    color: #e50914;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #292929;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.testimonial cite {
+    font-size: 1em;
+    color: #e50914;
+    display: block;
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: #e50914;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-media-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-media-links a {
+        font-size: 1.5em;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .project img {
+        max-width: 100%;
+    }
+
+    .testimonial {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #about img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-text h1 {
+        font-size: 2em;
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
+
+    .project-info h3 {
+        font-size: 1.2em;
+    }
+
+    .skill-bar {
+        height: 8px;
+    }
+}
